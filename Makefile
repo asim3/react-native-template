@@ -21,6 +21,10 @@ tests:
 	${CD} npm test ${args}
 
 
+copy-to-project:
+	cp -r ./setup/project/* ./${PROJECT_NAME}/
+
+
 update:
 	${CD} expo publish
 

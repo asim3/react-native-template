@@ -29,7 +29,7 @@ update-project-name() {
 
 
 copy-base-project-files() {
-	cp ./setup/project/* ./${name}/
+	cp -r ./setup/project/* ./${name}/
 }
 
 
