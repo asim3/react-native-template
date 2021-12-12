@@ -1,0 +1,33 @@
+SHELL=/bin/bash
+
+PROJECT_NAME=my_project_name
+
+CD=cd ./${PROJECT_NAME} &&
+
+
+main: run
+
+init: 
+	./setup/set-new-react-project.bash
+	echo 'rm -r ./setup/'
+
+
+install:
+	${CD} npm install
+
+
+# make test args=my_app
+tests:
+	${CD} npm test ${args}
+
+
+update:
+	${CD} expo publish
+
+
+run:
+	${CD} expo start --web
+
+
+delete-all:
+	rm -r ./${PROJECT_NAME}
