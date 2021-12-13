@@ -1,26 +1,22 @@
 import React from 'react';
-import { View, ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
+import { View } from 'react-native';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
 import Header from "../Header"
 
 
-export default function IconsPage(props) {
+export default function Page(props) {
     return (
-        <View style={{ flex: 1 }}>
+        <View style={{ backgroundColor: "red", flex: 1 }}>
 
             <Header page_name={props.name} />
 
-            <KeyboardAvoidingView
-                behavior={Platform.OS === "ios" ? "padding" : "height"}
-                style={{ backgroundColor: "yellow", flex: 1, }}>
 
-                <ScrollView style={{ backgroundColor: "red", flex: 1, }}>
+            <KeyboardAwareScrollView>
 
-                    {props.children}
+                {props.children}
 
-                </ScrollView>
-
-            </KeyboardAvoidingView>
+            </KeyboardAwareScrollView>
 
         </View>
     );

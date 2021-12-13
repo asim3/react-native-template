@@ -15,7 +15,8 @@ start-react-project() {
 
 	cd ./${name} && yarn add \
 		react-router-native \
-		react-native-paper
+		react-native-paper \
+		react-native-keyboard-aware-scroll-view
 	
     cd ..
 }
