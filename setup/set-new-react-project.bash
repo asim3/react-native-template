@@ -14,9 +14,7 @@ start-react-project() {
 	expo init ${name} --template blank
 
 	cd ./${name} && yarn add \
-		react-router-native \
-		react-native-elements \
-		react-native-safe-area-context
+		react-router-native
 	
     cd ..
 }
