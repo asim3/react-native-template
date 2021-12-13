@@ -1,11 +1,15 @@
 import React from 'react';
-import { ScrollView, View, Text } from 'react-native';
+import { View, Text } from 'react-native';
+
+import Page from "../Page"
 
 
 export default function UserPage() {
     return (
-        <Text>
-            UserPage
-        </Text>
+        <Page name="User">
+            <Text style={{ color: "#fff" }}>
+                UserPage
+            </Text>
+        </Page>
     );
 }

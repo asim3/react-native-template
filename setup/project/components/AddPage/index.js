@@ -1,15 +1,12 @@
 import React from 'react';
-import { ScrollView, View, TextInput } from 'react-native';
+import { View, TextInput } from 'react-native';
 
-import Header from "../Header"
+import Page from "../Page"
 
 
 export default function AddPage() {
     return (
-        <ScrollView stickyHeaderIndices={[0, 3]} style={{ backgroundColor: "red", flex: 1, }}>
-
-            <Header />
-
+        <Page name="Add">
 
             <View style={{ backgroundColor: "green", height: 100, }} />
             <View style={{ backgroundColor: "yellow", height: 100, }} />
@@ -40,6 +37,6 @@ export default function AddPage() {
             <View style={{ backgroundColor: "dodgerblue", height: 100, }} />
             <View style={{ backgroundColor: "gold", height: 100, }} />
 
-        </ScrollView>
+        </Page>
     );
 }
