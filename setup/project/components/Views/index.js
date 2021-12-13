@@ -1,33 +1,20 @@
-import React from 'react';
-import { BottomNavigation, Text } from 'react-native-paper';
+import React, { useState } from 'react';
+import { BottomNavigation } from 'react-native-paper';
 
-import AddView from "../AddView"
-import HomeView from "../HomeView"
+import URLs from '../../URLs';
 
 
-const RecentsRoute = () => <Text>Recents</Text>;
+export default function Views() {
+    const [index, setIndex] = useState(2);
 
-const MyComponent = () => {
-    const [index, setIndex] = React.useState(0);
-    const [routes] = React.useState([
-        { key: 'home', title: 'Home', icon: 'home' },
-        { key: 'add', title: 'Add', icon: 'plus' },
-        { key: 'recents', title: 'Recents', icon: 'history' },
-    ]);
+    const renderScene = BottomNavigation.SceneMap(URLs.pages);
 
-    const renderScene = BottomNavigation.SceneMap({
-        home: HomeView,
-        add: AddView,
-        recents: RecentsRoute,
-    });
 
     return (
         <BottomNavigation
-            navigationState={{ index, routes }}
+            navigationState={{ index, routes: URLs.links }}
             onIndexChange={setIndex}
             renderScene={renderScene}
         />
     );
-};
-
-export default MyComponent;
+}

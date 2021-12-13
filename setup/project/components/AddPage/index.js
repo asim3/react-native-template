@@ -4,7 +4,7 @@ import { ScrollView, View, TextInput } from 'react-native';
 import Header from "../Header"
 
 
-export default function AddView() {
+export default function AddPage() {
     return (
         <ScrollView stickyHeaderIndices={[0, 3]} style={{ backgroundColor: "red", flex: 1, }}>
 

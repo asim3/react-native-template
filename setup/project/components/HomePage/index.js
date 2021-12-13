@@ -4,7 +4,7 @@ import { ScrollView, View, TextInput, KeyboardAvoidingView } from 'react-native'
 import Header from "../Header"
 
 
-export default function HomeView() {
+export default function HomePage() {
     return (
         <ScrollView stickyHeaderIndices={[0]} style={{ backgroundColor: "red", flex: 1, }}>
 
