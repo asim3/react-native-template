@@ -21,8 +21,8 @@ start-react-project() {
 
 
 update-project-name() {
-	sed -i -e "s/my_project_name/${name}/g" ./Makefile
-	sed -i -e "s/my_project_name/${name}/g" ./README.md
+	sed -i -e "s/=my_project_name/=${name}/g" ./Makefile
+	sed -i -e "s/=my_project_name/=${name}/g" ./README.md
 }
 
 

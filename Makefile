@@ -34,6 +34,6 @@ run:
 
 
 delete-all:
-	rm -r ./${PROJECT_NAME}
+	rm -fr ./${PROJECT_NAME}
 	sed -i -e "s/${PROJECT_NAME}/my_project_name/g" ./README.md
 	sed -i -e "s/${PROJECT_NAME}/my_project_name/g" ./Makefile
