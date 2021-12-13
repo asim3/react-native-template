@@ -1,5 +1,6 @@
 import React from 'react';
 import { SafeAreaView, View, Text } from 'react-native';
+import { Avatar } from 'react-native-paper';
 import styles from './styles'
 
 
@@ -9,7 +10,7 @@ export default function Header() {
             <SafeAreaView>
                 <View style={styles.view}>
                     <Text>aaaa</Text>
-                    <Text>bbbb</Text>
+                    <Avatar.Icon size={24} icon="folder" />
                     <Text>cccc</Text>
                 </View>
             </SafeAreaView>

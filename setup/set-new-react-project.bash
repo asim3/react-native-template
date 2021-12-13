@@ -14,7 +14,8 @@ start-react-project() {
 	expo init ${name} --template blank
 
 	cd ./${name} && yarn add \
-		react-router-native
+		react-router-native \
+		react-native-paper
 	
     cd ..
 }
@@ -22,7 +23,7 @@ start-react-project() {
 
 update-project-name() {
 	sed -i -e "s/=my_project_name/=${name}/g" ./Makefile
-	sed -i -e "s/=my_project_name/=${name}/g" ./README.md
+	sed -i -e "s/my_project_name/${name}/g" ./README.md
 }
 
 

@@ -1,12 +1,14 @@
 import React from 'react';
 import { ScrollView, View, TextInput } from 'react-native';
+import { Provider as PaperProvider } from 'react-native-paper';
 
 import Header from "./components/Header"
 
 
 export default function App() {
     return (
-        <View style={{ flex: 1 }}>
+        <PaperProvider>
+
 
             <Header />
 
@@ -44,6 +46,7 @@ export default function App() {
                 }} />
             </View>
 
-        </View>
+
+        </PaperProvider>
     );
 }
