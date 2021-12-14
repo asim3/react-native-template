@@ -17,9 +17,9 @@ start-react-project() {
 		@react-navigation/native \
 		react-native-screens \
 		react-native-safe-area-context \
-		@react-navigation/native-stack \
 		react-native-paper \
 		react-native-keyboard-aware-scroll-view \
+		@react-navigation/native-stack \
 		--yarn
 		
     cd ..
