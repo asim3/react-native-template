@@ -9,7 +9,7 @@ export default function Page(props) {
     return (
         <View style={{ backgroundColor: "red", flex: 1 }}>
 
-            <Header page_name={props.name} />
+            <Header title={props.name} />
 
 
             <KeyboardAwareScrollView>

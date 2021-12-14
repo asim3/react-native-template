@@ -1,15 +1,21 @@
 import React from "react";
 import { Button, View, Text } from "react-native";
 
+import Screen from "../Base";
 
-export default function DetailsScreen({ navigation }) {
+
+export default function DetailsScreen(props) {
     return (
-        <View>
+        <Screen
+            home_link={() => props.jumpTo('add')}
+            back_link={() => props.jumpTo('add')}
+            title="Details Title">
+
+
             <Text>Details Screen</Text>
-            <Button
-                title="Go to Details... again"
-                onPress={() => navigation.push('Details')}
-            />
-        </View>
+
+            <Button title="Home" onPress={() => props.jumpTo('Home')} />
+
+        </Screen>
     );
 }

@@ -3,13 +3,15 @@ import { Appbar } from "react-native-paper";
 import styles from "./styles"
 
 
-export default function Header(props) {
+export default function Header({ title, home_link, back_link, children }) {
     return (
         <Appbar.Header>
 
-            <Appbar.BackAction onPress={() => { }} />
+            {back_link ? <Appbar.BackAction onPress={back_link} /> : null}
 
-            <Appbar.Content title={props.page_name} subtitle={props.page_name} />
+            <Appbar.Content title={title} subtitle={title} />
+
+            {home_link ? <Appbar.Action icon="home" onPress={home_link} /> : null}
 
             <Appbar.Action icon="magnify" onPress={() => { }} />
 

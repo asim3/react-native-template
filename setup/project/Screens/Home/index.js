@@ -1,15 +1,21 @@
 import React from "react";
 import { Button, View, Text } from "react-native";
 
+import Screen from "../Base";
 
-export default function HomeScreen({ navigation }) {
+
+export default function HomeScreen(props) {
     return (
-        <View>
+        <Screen
+            home_link={() => props.jumpTo('user')}
+            back_link={() => props.jumpTo('user')}
+            title="Home Title">
+
+
             <Text>Home Screen</Text>
-            <Button
-                title="Go to Details"
-                onPress={() => navigation.navigate('Details')}
-            />
-        </View>
+
+            <Button title="User" onPress={() => props.jumpTo('user')} />
+
+        </Screen>
     );
 }
