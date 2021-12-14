@@ -22,6 +22,7 @@ tests:
 
 
 copy-to-project:
+	rm -fr ./${PROJECT_NAME}/Screens/ ./${PROJECT_NAME}/components/
 	cp -r ./setup/project/* ./${PROJECT_NAME}/
 
 

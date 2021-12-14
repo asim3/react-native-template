@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BottomNavigation } from "react-native-paper";
 
-import URLs from "../../URLs";
+import URLs from "./URLs";
 
 
 export default function Views() {

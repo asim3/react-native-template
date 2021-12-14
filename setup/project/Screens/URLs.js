@@ -1,7 +1,7 @@
-import HomePage from "./components/HomePage"
-import UserPage from "./components/UserPage"
-import AddPage from "./components/AddPage"
-import IconsPage from "./components/IconsPage"
+import HomePage from "../components/HomePage"
+import UserPage from "../components/UserPage"
+import AddPage from "../components/AddPage"
+import IconsPage from "../components/IconsPage"
 
 
 
