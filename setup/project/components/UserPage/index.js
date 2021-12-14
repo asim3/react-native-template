@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React from "react";
+import { Text } from "react-native-paper";
 
 import Page from "../Page"
 
@@ -7,7 +7,7 @@ import Page from "../Page"
 export default function UserPage() {
     return (
         <Page name="User">
-            <Text style={{ color: "#fff" }}>
+            <Text>
                 UserPage
             </Text>
         </Page>

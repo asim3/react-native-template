@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 
 export default StyleSheet.create({
@@ -12,6 +12,6 @@ export default StyleSheet.create({
         justifyContent: "space-between",
         height: 50,
         padding: 20,
-        backgroundColor: 'royalblue',
+        backgroundColor: "royalblue",
     }
 });

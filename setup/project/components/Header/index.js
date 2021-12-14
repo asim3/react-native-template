@@ -1,6 +1,6 @@
-import React from 'react';
-import { Appbar } from 'react-native-paper';
-import styles from './styles'
+import React from "react";
+import { Appbar } from "react-native-paper";
+import styles from "./styles"
 
 
 export default function Header(props) {
