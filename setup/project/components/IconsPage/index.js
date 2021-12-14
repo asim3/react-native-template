@@ -9,7 +9,7 @@ export default function IconsPage() {
         <Page name="Icons">
             <Text
                 style={{ color: "#fff" }}
-                onPress={() => Linking.openURL("https://oblador.github.io/react-native-vector-icons/")}>
+                onPress={() => Linking.openURL("https://materialdesignicons.com/")}>
                 Vector Icons
             </Text>
         </Page>

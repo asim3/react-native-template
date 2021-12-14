@@ -8,10 +8,12 @@ import IconsPage from "./components/IconsPage"
 export default {
     links: [
         { key: 'home', title: 'Home', icon: 'home' },
-        { key: 'about', title: 'About', icon: 'about' },
+        { key: 'home', title: 'Recents', icon: 'home-outline' },
+        { key: 'home', title: 'History', icon: 'history' },
+        { key: 'about', title: 'About', icon: 'cog' },
         { key: 'add', title: 'Add', icon: 'plus' },
-        { key: 'icons', title: 'Icons', icon: 'history' },
-        { key: 'user', title: 'Recents', icon: 'user' },
+        { key: 'icons', title: 'Icons', icon: 'alert-circle' },
+        { key: 'user', title: 'Users', icon: 'account' },
     ],
     pages: {
         home: HomePage,

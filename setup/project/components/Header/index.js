@@ -1,10 +1,6 @@
 import React from 'react';
-import { Platform } from 'react-native';
 import { Appbar } from 'react-native-paper';
 import styles from './styles'
-
-
-const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'dots-vertical';
 
 
 export default function Header(props) {
@@ -17,7 +13,7 @@ export default function Header(props) {
 
             <Appbar.Action icon="magnify" onPress={() => { }} />
 
-            <Appbar.Action icon={MORE_ICON} onPress={() => { }} />
+            <Appbar.Action icon="dots-vertical" onPress={() => { }} />
 
         </Appbar.Header>
     );
