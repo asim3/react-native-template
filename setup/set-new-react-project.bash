@@ -13,11 +13,15 @@ read name
 start-react-project() {
 	expo init ${name} --template blank
 
-	cd ./${name} && yarn add \
-		react-router-native \
+	cd ./${name} && expo install \
+		@react-navigation/native \
+		react-native-screens \
+		react-native-safe-area-context \
+		@react-navigation/native-stack \
 		react-native-paper \
-		react-native-keyboard-aware-scroll-view
-	
+		react-native-keyboard-aware-scroll-view \
+		--yarn
+		
     cd ..
 }
 
