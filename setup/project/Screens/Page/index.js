@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
-import Header from "../Header"
+import Header from "../../components/Header"
 
 
 export default function Page(props) {
