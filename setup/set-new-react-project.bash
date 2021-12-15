@@ -20,6 +20,7 @@ start-react-project() {
 		react-native-paper \
 		react-native-keyboard-aware-scroll-view \
 		@react-navigation/native-stack \
+		@react-navigation/material-bottom-tabs \
 		--yarn
 		
     cd ..
