@@ -2,10 +2,10 @@ import HomePage from "./HomePage"
 import UserPage from "./UserPage"
 import AddPage from "./AddPage"
 import IconsPage from "./IconsPage"
+import HomeRoutes from "../Routes/HomeRoutes"
 
 import Home from "./Home"
 import Details from "./Details"
-
 
 export default {
 
@@ -20,7 +20,7 @@ export default {
     ],
 
     pages: {
-        home: HomePage,
+        home: HomeRoutes,
         about: UserPage,
         user: UserPage,
         add: AddPage,
