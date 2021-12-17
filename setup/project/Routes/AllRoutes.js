@@ -45,8 +45,8 @@ export default {
         )
     },
 
-    Navigator: {
-        name: "Navigator",
+    User: {
+        name: "User",
         component: UserRoutes,
         icon: ({ color, size }) => (
             <MaterialIcons name="account-circle" color={color} size={size} />

@@ -1,4 +1,11 @@
 {
+    "routes": [
+        "Home",
+        "Details",
+        "Settings",
+        "Home2",
+        "User"
+    ],
     "bottom_navigator": {
         "screen_options": {
             "headerShown": false,
@@ -7,13 +14,6 @@
             },
             "tabBarActiveTintColor": "#fff",
             "tabBarInactiveTintColor": "#555"
-        },
-        "screens": [
-            "Home",
-            "Details",
-            "Settings",
-            "Home2",
-            "Navigator"
-        ]
+        }
     }
 }
