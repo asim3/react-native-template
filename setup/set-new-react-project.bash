@@ -15,12 +15,13 @@ start-react-project() {
 
 	cd ./${name} && expo install \
 		@react-navigation/native \
+		@react-navigation/native-stack \
+		@react-navigation/bottom-tabs \
 		react-native-screens \
 		react-native-safe-area-context \
 		react-native-paper \
 		react-native-keyboard-aware-scroll-view \
-		@react-navigation/native-stack \
-		@react-navigation/material-bottom-tabs \
+		react-native-gesture-handler \
 		--yarn
 		
     cd ..
