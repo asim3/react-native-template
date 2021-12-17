@@ -1,12 +1,14 @@
 import React from "react";
 import { Button, View, Text, TextInput } from 'react-native';
+
+import styles from "./styles";
 import ScreenBase from "../../components/ScreenBase"
 
 
-export default function NewHomeScreen({ navigation }) {
+export default function UserScreen({ navigation }) {
     return (
         <ScreenBase>
-            <Text>New Home Screen</Text>
+            <Text>User Screen</Text>
             <Button
                 title="Go to Home"
                 onPress={() => navigation.push('Home')}

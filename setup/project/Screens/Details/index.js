@@ -1,21 +1,59 @@
 import React from "react";
-import { Button, View, Text } from "react-native";
+import { Button, View, Text, TextInput } from 'react-native';
 
-import Screen from "../Base";
+import styles from "./styles";
+import ScreenBase from "../../components/ScreenBase"
 
 
-export default function DetailsScreen(props) {
+export default function DetailsScreen({ navigation }) {
     return (
-        <Screen
-            home_link={() => props.navigation.jumpTo('Home')}
-            back_link={() => props.navigation.jumpTo('Navigator 2')}
-            title="Details Title">
-
-
+        <ScreenBase>
             <Text>Details Screen</Text>
+            <Button
+                title="Go to Home"
+                onPress={() => navigation.push('Home')}
+            />
+            <Button
+                title="Go to Details"
+                onPress={() => navigation.push('Details')}
+            />
+            <Button
+                title="Go to Settings"
+                onPress={() => navigation.push('Settings')}
+            />
 
-            <Button title="Go to Home Settings" onPress={() => props.navigation.navigate('Home', { screen: "Settings" })} />
 
-        </Screen>
+            <View style={{ backgroundColor: "green", height: 100, }} />
+            <View style={{ backgroundColor: "yellow", height: 100, }} />
+            <View style={{ backgroundColor: "green", height: 100, }} />
+            <View style={{ backgroundColor: "yellow", height: 100, }} />
+            <View style={{ backgroundColor: "green", height: 100, }} />
+            <View style={{ backgroundColor: "yellow", height: 100, }} />
+            <View style={{ backgroundColor: "green", height: 100, }} />
+            <View style={{ backgroundColor: "yellow", height: 100, }} />
+
+
+            <View style={{ backgroundColor: "dodgerblue", height: 100, }} />
+            <View style={{ backgroundColor: "gold", height: 100, }} />
+            <View style={{ backgroundColor: "dodgerblue", height: 100, }} />
+            <View style={{ backgroundColor: "gold", height: 100, }} />
+            <View style={{ backgroundColor: "dodgerblue", height: 100, }} />
+            <View style={{ backgroundColor: "gold", height: 100, }} />
+
+            <View style={{ backgroundColor: "tomato", height: 50 }}>
+                <TextInput placeholder="my placeholder" style={{
+                    textAlign: "center",
+                    margin: 5,
+                    height: 40,
+                    fontSize: 18,
+                    backgroundColor: "#fff",
+                    borderColor: "green",
+                    borderWidth: 2,
+                    borderRadius: 7,
+                }} />
+            </View>
+            <View style={{ backgroundColor: "pink", height: 10, }} />
+
+        </ScreenBase>
     );
 }

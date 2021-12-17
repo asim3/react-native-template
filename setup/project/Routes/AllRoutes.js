@@ -7,8 +7,8 @@ import {
 
 import HomeRoutes from "./Home"
 import DetailsRoutes from "./Details"
-import IconsPage from "../Screens/IconsPage"
-import HomeScreen from "../Screens/Home"
+import IconsPage from "../Screens/Home"
+import HomeScreen from "../Screens/Settings"
 import UserRoutes from "./User"
 
 
