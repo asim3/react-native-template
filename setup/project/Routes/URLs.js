@@ -13,8 +13,8 @@ import UserRoutes from "./User"
 
 
 export default {
-    home: {
-        name: "home",
+    Home: {
+        name: "Home",
         component: HomeRoutes,
         icon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />

@@ -8,32 +8,28 @@ import Configuration from "../Configuration.json"
 const Tab = createBottomTabNavigator();
 
 
-function get_screens() {
-    return Configuration.bottom_navigator.map(route => {
-        return (
-            <Tab.Screen
-                name={URLs[route].name}
-                component={URLs[route].component}
-                options={{
-                    title: URLs[route].name,
-                    tabBarIcon: URLs[route].icon,
-                }}
-            />
-        );
-    });
-}
-
-
 export default function NavigatorBottom() {
+
+    const get_screens = function () {
+        return Configuration.bottom_navigator.screens.map(route => {
+            return (
+                <Tab.Screen
+                    name={URLs[route].name}
+                    component={URLs[route].component}
+                    options={{
+                        title: URLs[route].name,
+                        tabBarIcon: URLs[route].icon,
+                    }}
+                />
+            );
+        });
+    }
+
+
     return (
         <Tab.Navigator
             initialRouteName="Settings"
-            screenOptions={{
-                headerShown: false,
-                tabBarStyle: { backgroundColor: "#272727" },
-                tabBarActiveTintColor: "#fff",
-                tabBarInactiveTintColor: "#555",
-            }}>
+            screenOptions={Configuration.bottom_navigator.screen_options}>
 
             {get_screens()}
 

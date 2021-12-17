@@ -1,9 +1,19 @@
 {
-    "bottom_navigator": [
-        "home",
-        "Details",
-        "Settings",
-        "Home2",
-        "Navigator"
-    ]
+    "bottom_navigator": {
+        "screen_options": {
+            "headerShown": false,
+            "tabBarStyle": {
+                "backgroundColor": "#272727"
+            },
+            "tabBarActiveTintColor": "#fff",
+            "tabBarInactiveTintColor": "#555"
+        },
+        "screens": [
+            "Home",
+            "Details",
+            "Settings",
+            "Home2",
+            "Navigator"
+        ]
+    }
 }
