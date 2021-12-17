@@ -8,7 +8,7 @@ import Configuration from "../Configuration.json"
 const Tab = createBottomTabNavigator();
 
 
-export default function NavigatorBottom() {
+export default function Navigator() {
 
     const get_screens = function () {
         return Configuration.routes.map(route => {
