@@ -5,11 +5,11 @@ import styles from "./styles";
 import ScreenBase from "../../components/ScreenBase"
 
 
-export default function SettingsScreen({ navigation }) {
+export default function ProfileScreen({ navigation }) {
     return (
         <ScreenBase>
-            <Text>Settings Screen</Text>
 
+            <Text>Profile Screen</Text>
 
             <Text>Photo</Text>
 
