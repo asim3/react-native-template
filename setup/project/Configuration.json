@@ -2,10 +2,10 @@
     "routes": [
         "Home",
         "Details",
-        "Settings",
-        "Home2",
-        "User"
+        "User",
+        "AppInfo"
     ],
+    "initial_route": "AppInfo",
     "bottom_navigator": {
         "screen_options": {
             "headerShown": false,

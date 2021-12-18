@@ -7,8 +7,7 @@ import {
 
 import HomeRoutes from "./Home"
 import DetailsRoutes from "./Details"
-import IconsPage from "../Screens/Home"
-import HomeScreen from "../Screens/Settings"
+import AppInfoScreen from "../Screens/AppInfo"
 import UserRoutes from "./User"
 
 
@@ -31,15 +30,15 @@ export default {
 
     Settings: {
         name: "Settings",
-        component: IconsPage,
+        component: AppInfoScreen,
         icon: ({ color, size }) => (
             <MaterialIcons name="add" color={color} size={size} />
         )
     },
 
-    Home2: {
-        name: "Home2",
-        component: HomeScreen,
+    AppInfo: {
+        name: "AppInfo",
+        component: AppInfoScreen,
         icon: ({ color, size }) => (
             <Ionicons name="settings-sharp" color={color} size={size} />
         )

@@ -11,10 +11,11 @@ const Tab = createBottomTabNavigator();
 export default function Navigator() {
 
     const get_screens = function () {
-        return Configuration.routes.map(route => {
+        return Configuration.routes.map((route, i) => {
             return (
                 <Tab.Screen
-                    name={AllRoutes[route].name}
+                    key={i}
+                    name={route}
                     component={AllRoutes[route].component}
                     options={{
                         title: AllRoutes[route].name,
@@ -28,7 +29,7 @@ export default function Navigator() {
 
     return (
         <Tab.Navigator
-            initialRouteName="Settings"
+            initialRouteName={Configuration.initial_route}
             screenOptions={Configuration.bottom_navigator.screen_options}>
 
             {get_screens()}

@@ -31,14 +31,12 @@ export default function HomeScreen({ navigation }) {
             <View style={{ backgroundColor: "yellow", height: 100, }} />
             <View style={{ backgroundColor: "green", height: 100, }} />
             <View style={{ backgroundColor: "yellow", height: 100, }} />
-
-
             <View style={{ backgroundColor: "dodgerblue", height: 100, }} />
-            <View style={{ backgroundColor: "gold", height: 100, }} />
+            <View style={{ backgroundColor: "yellow", height: 100, }} />
             <View style={{ backgroundColor: "dodgerblue", height: 100, }} />
-            <View style={{ backgroundColor: "gold", height: 100, }} />
+            <View style={{ backgroundColor: "yellow", height: 100, }} />
             <View style={{ backgroundColor: "dodgerblue", height: 100, }} />
-            <View style={{ backgroundColor: "gold", height: 100, }} />
+            <View style={{ backgroundColor: "yellow", height: 100, }} />
 
             <View style={{ backgroundColor: "tomato", height: 50 }}>
                 <TextInput placeholder="my placeholder" style={{
